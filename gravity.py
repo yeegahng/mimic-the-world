@@ -58,6 +58,8 @@ if __name__ == "__main__":
     earth = Object("Earth", 5.98*10**24, 6.38*10**3, (8000, 0), (0, 0))
     asteroid = Object("Asteroid", 2*10**5, 50, (0, 10000), (0, 0))
 
+    earth.draw()
+
     for _ in range(50):
         #force_to_earth = earth.estimate_gravitational_force_from(asteroid)
         force_to_asteroid = asteroid.estimate_gravitational_force_from(earth)
